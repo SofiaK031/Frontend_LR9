@@ -1,0 +1,217 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: url('images/background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    font-family: "Century Gothic";
+    font-size: 22px;
+}
+
+.content {
+  display: flex;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 20px;
+  max-width: 900px;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid;
+  background: linear-gradient(45deg, #66f7ff, #a3ff4d);
+  border-image-source: linear-gradient(50deg, #db3bff, #ff007b);
+  box-shadow: -7px 5px 20px #ff007b, 7px -5px 20px #db3bff;
+  border-image-slice: 1;
+}
+
+#main-title {
+  display: flex;
+  font-weight: bold;
+  font-size: 35px;
+  width: 100%;
+  height: 10%;
+  font-family: "Dancing Script", cursive;
+  color: rgb(208, 0, 255);
+  text-align: center;
+  align-items: center;
+  position: relative;
+  padding-top: 5%;
+	margin-left: 60%;
+  width: 50%;
+  vertical-align: bottom;
+	transform: translate(-50%, -50%);
+}
+
+.user, .computer, .play {
+  text-align: center;
+  align-items: center;
+}
+
+.count {
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+.play {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+img[alt] { font-size: 16px; }
+
+#user-name, #computer-name {
+  margin-left: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  width: 80%;
+	height: 15%;
+  text-align: center;
+  color: rgb(0, 200, 255);
+  text-shadow: 0 0 5px rgb(0, 0, 0),
+  0 0 5px rgb(0, 0, 0),
+  0 0 5px rgb(0, 0, 0),
+  0 0 5px rgb(0, 0, 0),
+  0 0 2px rgb(204, 204, 204),
+  0 0 2px rgb(204, 204, 204),
+  0 0 2px rgb(204, 204, 204),
+  0 0 2px rgb(204, 204, 204);
+}
+
+#user-number, #computer-number {
+	width: 80%;
+	height: 15%;
+	border-radius: 50px;
+  border: 1px solid black;
+	text-align: center;
+	background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 80%);
+  font-family: "Century Gothic";
+}
+
+#user-card, #computer-card {
+  width: 160px;
+  height: 225px;
+}
+
+.image {
+  text-align: center;
+  align-items: center;
+}
+
+button {
+  padding: 15px 35px;
+  color: white;
+  border: 1px black;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #e45a1e;
+}
+
+@media (max-width: 900px) {
+  .content{
+    margin: 20px 10px;
+    font-size: 22px;
+  }
+  #btn {
+    padding: 10px 10px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content{
+    margin: 15px 10px;
+    font-size: 20px;
+  }
+  #main-title {
+    font-size: 28px;
+    margin-top: 15px;
+  }
+  #user-name, #computer-name, #user-count, #computer-count, #play-count {
+    font-size: 20px;
+  }
+  #btn {
+    padding: 8px 8px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 650px) {
+  .content{
+    margin: 15px 10px;
+    font-size: 18px;
+  }
+  #main-title {
+    font-size: 25px;
+    margin-top: 18px;
+  }
+  #user-name, #computer-name, #user-count, #computer-count, #play-count {
+    font-size: 20px;
+  }
+  #btn {
+    padding: 8px 8px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 540px) {
+  .content{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .play{
+    margin: 20px auto;
+  }
+  #main-title {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  #user-name, #computer-name, #user-count, #computer-count, #play-count {
+    font-size: 18px;
+  }
+  #btn {
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 300px) {
+  .content{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .play {
+    margin: 20px auto;
+  }
+  #main-title {
+    font-size: 22px;
+    margin-top: 35px;
+  }
+  #user-name, #computer-name, #user-count, #computer-count, #play-count {
+    font-size: 16px;
+  }
+  #btn {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+
+#validation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
