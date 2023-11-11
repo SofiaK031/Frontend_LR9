@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // створення масивів мастей та значень
     let values = [6, 7, 8, 9, 10, 2, 3, 4, 11];
-    let suit = ['./images/6.png', './images/7.png', './images/8.png', './images/9.png', './images/10.png', './images/jack.png', './images/queen.png', './images/king.png', './images/ace.png'];
+    let suit = ['./dist/images/6.png', './dist/images/7.png', './dist/images/8.png', './dist/images/9.png', './dist/images/10.png', './dist/images/jack.png', './dist/images/queen.png', './dist/images/king.png', './dist/images/ace.png'];
 
     let userCount = 0;
     let computerCount = 0;
