@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // створення масивів мастей та значень
     let values = [6, 7, 8, 9, 10, 2, 3, 4, 11];
-    let suit = ['6.png', '7.png', '8.png', '9.png', '10.png', 'jack.png', 'queen.png', 'king.png', 'ace.png'];
+    let suit = ['./images/6.png', './images/7.png', './images/8.png', './images/9.png', './images/10.png', './images/jack.png', './images/queen.png', './images/king.png', './images/ace.png'];
 
     let userCount = 0;
     let computerCount = 0;
@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
         let userCard = randomCardIndex();
         let computerCard = randomCardIndex();
 
-        document.getElementById("user-card").src = "./images/"+suit[userCard];
-        document.getElementById("computer-card").src = "./images/"+suit[computerCard];
+        document.getElementById("user-card").src = suit[userCard];
+        document.getElementById("computer-card").src = suit[computerCard];
 
         userCount += values[userCard];
         computerCount += values[computerCard];
