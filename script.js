@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
         let userCard = randomCardIndex();
         let computerCard = randomCardIndex();
 
-        document.getElementById("user-card").src = "images/"+suit[userCard];
-        document.getElementById("computer-card").src = "images/"+suit[computerCard];
+        document.getElementById("user-card").src = "./images/"+suit[userCard];
+        document.getElementById("computer-card").src = "./images/"+suit[computerCard];
 
         userCount += values[userCard];
         computerCount += values[computerCard];
